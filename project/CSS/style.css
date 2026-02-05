@@ -1,0 +1,111 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+/* Step Sections */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Inputs & Buttons */
+input, select, button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Progress Bar */
+.progress {
+  background: #222;
+  height: 6px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: #00ffff;
+  transition: 0.3s;
+}
+
+/* File Preview */
+.preview {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #00ffff;
+}
+
+.preview img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+/* Status Page */
+.status {
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.status.pending {
+  background: rgba(255, 255, 0, 0.1);
+  color: #ffd700;
+}
+
+.status.approved {
+  background: rgba(0, 255, 0, 0.1);
+  color: #00ff88;
+}
+
+.status.rejected {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+}
+
+.status-note {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+  opacity: 0.8;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Role Application – La Tanda</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Apply for a Role</h1>
+
+    <!-- Progress -->
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- Step 1: Role Selection -->
+    <section class="step active">
+      <h2>Select Role</h2>
+      <select id="role">
+        <option value="">Choose a role</option>
+        <option value="verified_user">verified_user</option>
+        <option value="coordinator">coordinator</option>
+      </select>
+      <button>Next</button>
+    </section>
+
+    <!-- Step 2: User Info -->
+    <section class="step">
+      <h2>Your Information</h2>
+      <input type="text" id="name" placeholder="Full Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <button>Next</button>
+    </section>
+
+    <!-- Step 3: Upload Documents -->
+    <section class="step">
+      <h2>Upload Documents</h2>
+      <input type="file" id="document" accept="image/*,.pdf" />
+      <div id="preview" class="preview"></div>
+      <button>Submit</button>
+    </section>
+
+    <!-- Step 4: Status Page -->
+    <section class="step">
+      <h2>Application Status</h2>
+      <div class="status pending">⏳ Your application is under review</div>
+      <p class="status-note">You will be notified once your request is reviewed.</p>
+    </section>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
